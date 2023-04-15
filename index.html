@@ -4,19 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>..:: Gamificando ::..</title>
 </head>
 <body>
-    <div id="menu">
-        <header id="header">
+    <!-- Aula 15/04/2023 -->
+    <!-- Início Menu Responsivo -->
+    <header id="header">
             <a id="logo" href="index.html"><img src="./img/logo.png" alt=""></a>
 
 
-        </header>
+    </header>
+    <!-- Fim menu responsivo-->
 
-    </div>
-    
+    <!-- Início corousel página principal -->
+    <div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-mdb-interval="100">
+                <img 
+                src="./img/carousel_01.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/carousel_02.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/carousel_03.png"
+                class="d-block w-100"
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/carousel_04.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/carousel_05.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/carousel_06.webp"
+                class="d-block w-100"
+                alt="..."
+                />
+            </div>
+        </div>    
+        <!-- Alt + Shift + Seta para baixo, copia contéudo -->
+            <!-- Início controle carousel -->
+            <button
+                class="carousel-control-prev"
+                data-mdb-target="#carouselExampleInterval"
+                type="button"
+                data-mdb-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>                
+            </button>
+            <button
+                class="carousel-control-next"
+                data-mdb-target="#carouselExampleInterval"
+                type="button"
+                data-mdb-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>                
+            </button>
+    </div>    
 </body>
+
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
+
+</script>
+
 </html>
