@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 /* Aula 01 - 01/04/2023 */
 
 body, ul {
@@ -7,10 +8,12 @@ body, ul {
 #header #menu a {
     color: black;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Indie Flower';
     text-transform: uppercase;
     font-size: 1.25em;
     transition: 0.3s;
+    gap: 15px;
+    flex-direction: row-reverse; /* Texto Menu sempre a esquerda */
 }
 #header #menu a:hover {
     color: crimson;
@@ -29,10 +32,11 @@ body, ul {
     position: relative;
     top: 0px;
     left: 0px;
+    border-radius: 200px; /* Criar bordar circular na imagem */
 }
 #header {
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 90;
     box-sizing: border-box;
     height: 70px;
@@ -41,6 +45,8 @@ body, ul {
     align-items: center;
     justify-content: space-between;
     background: #e7e7e7;
+    box-shadow: 6px 6px 8px #0000007a;
+    transition: 0.3s;
 }
 #menu {
     display: flex;
@@ -50,18 +56,37 @@ body, ul {
 #btn-mobile {
     display: none;
 }
+/*
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
     padding-top: 80px;
 }
+*/
+
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px 8px #0000007a;
+    transition: 0.3s;
+    place-items: normal legacy;
+    margin-block: 10px;
+    height: auto;
+}
+#carouselExampleInterval .carousel-inner img {
+    max-height: 550px;
+    width: 100%;
+}
+
 /* Estilo CSS Banner */
 .section-banner-home {
     width: 100%;
     height: 500px;
     margin-top: 10px;
     padding: 50px;
-    background-color: #005caa;
+    background-color: #006ccb;
 }
 .section-banner-home img {
     height: 400px;
@@ -75,17 +100,25 @@ body, ul {
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
+    color: white;
 }
 .section-banner-home .texto-banner p {
     font-size: 15px;
     margin-bottom: 20px;
+    color: white;
 }
 .section-banner-home .texto-banner a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: #fff;
+    background-color: #100060;
     padding: 4px 14px;
     font-size: 15px;
+}
+.section-banner-home .texto-banner a:hover {
+    color: greenyellow;
+    text-shadow: 2px 2px 4px #ffffff7a;
+    font-size: 18px;
+    font-weight: bold;
 }
 /* Fim CSS Banner */
 
@@ -120,3 +153,74 @@ body, ul {
 }
 /* Fim CSS Destaque */
 
+/* CSS Novidades */
+
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+.novidades h2 {
+    color: #000;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: rgb(0, 0, 0);
+}
+.novidades a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: rgb(0, 68, 194);
+    font-weight: 400;
+}
+/* Fim CSS Novidades */
+
+/* Início CSS Galerias */
+
+.galeria {
+    margin: 60px auto 20px;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 25%;
+    margin: 14px auto 50px;
+}
+/* Fim CSS Galerias */
+
+/* Início CSS Footer */
+
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .info-contato p {
+    margin: 0px;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
