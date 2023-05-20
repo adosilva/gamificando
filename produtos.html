@@ -1,341 +1,442 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
     <title>..:: Gamificando ::..</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Aula 15/04/2023 -->
     <!-- Início Menu Responsivo -->
     <header id="header">
-            <a id="logo" href="index.html"><img src="./img/logo.png" alt="Logo Gamificando"></a>
-            <nav id="nav">
-                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                    <span id="hamburger"></span>
-                </button>
-                <ul id="menu" role="menu">
-                    <li><a class="linkMenu" href="index.html">Home</a></li>
-                    <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
-                    <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
-                    <li><a class="linkMenu" href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+      <a id="logo" href="index.html"
+        ><img src="./img/logo.png" alt="Logo Gamificando"
+      /></a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a class="linkMenu" href="index.html">Home</a></li>
+          <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
+          <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
+          <li><a class="linkMenu" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Fim menu responsivo-->
     <!-- Início carousel página principal -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="1500">
-                <img 
-                src="./img/carousel_01.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1200">
-                <img 
-                src="./img/carousel_02.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1200">
-                <img 
-                src="./img/carousel_03.png"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1200">
-                <img 
-                src="./img/carousel_04.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1200">
-                <img 
-                src="./img/carousel_05.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1200">
-                <img 
-                src="./img/carousel_06.webp"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-        </div>    
-        <!-- Alt + Shift + Seta para baixo, copia contéudo -->
-        <!-- Alt + Shif >> Selecionando diversas e alterando o mesmo valor de forma simultânea -->
-            <!-- Início controle carousel -->
-            <button
-                class="carousel-control-prev"
-                data-bs-target="#carouselExampleInterval"
-                type="button"
-                data-bs-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>                
-            </button>
-            <button
-                class="carousel-control-next"
-                data-bs-target="#carouselExampleInterval"
-                type="button"
-                data-bs-slide="next"
-            >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>                
-            </button>
-    </div>
-    <!-- Fim controle carousel -->
-    <!-- Fim carousel página principal-->
-    <!-- Início Banner -->
-    <div class="section-banner-home">
-        <div class="container-fluid">
-            <div class="row m-0">
-                <div class="col-12 col-md-6">
-                    <figure>
-                        <img src="./img/banner.jpg" class="img-fluid" alt="banner-home">
-                    </figure>
-                </div>
-                <div class="col-12 col-md-6">
-                    <section class="texto-banner d-none d-md-block">
-                        <h1>Venha conhecer os mais novos jogos Educativos!</h1>
-                        <p class="d-none d-md-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, itaque! Ab natus fugit itaque? Aspernatur eligendi nostrum fuga vel nihil minima, deserunt delectus. Saepe consequuntur quam sunt magnam facilis veritatis!</p>
-                        <a href="produtos.html">Saiba Mais</a>
-                    </section>
-                </div>
-            </div>
+    <div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleTouch"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleTouch"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleTouch"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-    </div>
-    <!-- Fim Banner -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <!-- Início Destaque -->
     <div class="destaque">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <!-- Início da tag section do texto de destaque -->
-                <section class="col-12">
-                    <h2>Que tal conhecer as coleções de Games!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident exercitationem animi minima sunt maiores aliquam libero ad commodi voluptatibus eum, earum natus. Fuga sint atque nemo consequatur aliquam sapiente autem?</p>
-                </section>
-                <!-- Fim da tag section do texto de destaque -->
-                <!-- Início imagem 1 -->
-                <div class="col-6 col-md-2 pr-0">
-                    <figure>
-                        <a href="produtos.html"><img src="./img/ia_gamification.jpg" alt="figura-destaque" width="100%"></a>
-                        <figcaption>Jogo <br> Ano</figcaption>                        
-                    </figure>
-                </div>
-                <!-- Fim da imagem 1 -->
-                <!-- Início imagem 2 -->
-                <div class="col-6 col-md-2 pr-0">
-                    <figure>
-                        <a href="produtos.html"><img src="./img/ia_gamification.jpg" alt="figura-destaque" width="100%"></a>
-                        <figcaption>Jogo <br> Ano</figcaption>                        
-                    </figure>
-                </div>
-                <!-- Fim da imagem 2 -->
-                <!-- Início imagem 3 -->
-                <div class="col-6 col-md-2 pr-0">
-                    <figure>
-                        <a href="produtos.html"><img src="./img/ia_gamification.jpg" alt="figura-destaque" width="100%"></a>
-                        <figcaption>Jogo <br> Ano</figcaption>                        
-                    </figure>
-                </div>
-                <!-- Fim da imagem 3 -->
-                <!-- Início imagem 4 -->
-                <div class="col-6 col-md-2 pr-0">
-                    <figure>
-                        <a href="produtos.html"><img src="./img/ia_gamification.jpg" alt="figura-destaque" width="100%"></a>
-                        <figcaption>Jogo <br> Ano</figcaption>                        
-                    </figure>
-                </div>
-                <!-- Fim da imagem 4 -->
-                <!-- Início imagem 5 -->
-                <div class="col-6 col-md-2 pr-0">
-                    <figure>
-                        <a href="produtos.html"><img src="./img/ia_gamification.jpg" alt="figura-destaque" width="100%"></a>
-                        <figcaption>Jogo <br> Ano</figcaption>                        
-                    </figure>
-                </div>
-                <!-- Fim da imagem 5 -->
-                <!-- Início imagem 6 -->
-                <div class="col-6 col-md-2 pr-0">
-                    <figure>
-                        <a href="produtos.html"><img src="./img/ia_gamification.jpg" alt="figura-destaque" width="100%"></a>
-                        <figcaption>Jogo <br> Ano</figcaption>                        
-                    </figure>
-                </div>
-                <!-- Fim da imagem 6 -->
-                <!-- Início Saiba Mais -->
-                <div class="col-12">
-                    <a href="#">Saiba Mais</a>
-                </div>
-                <!-- Fim Saiba Mais -->
-            </div>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <!-- Início da tag section do texto de destaque -->
+          <section class="col-12">
+            <h2>Que tal conhecer as coleções de Games!</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident exercitationem animi minima sunt maiores aliquam libero
+              ad commodi voluptatibus eum, earum natus. Fuga sint atque nemo
+              consequatur aliquam sapiente autem?
+            </p>
+          </section>
+          <!-- Fim da tag section do texto de destaque -->
+          <!-- Início imagem 1 -->
+          <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="produtos.html"
+                ><img
+                  src="./img/ia_gamification.jpg"
+                  alt="figura-destaque"
+                  width="100%"
+              /></a>
+              <figcaption>
+                Jogo <br />
+                Ano
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Fim da imagem 1 -->
+          <!-- Início imagem 2 -->
+          <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="produtos.html"
+                ><img
+                  src="./img/ia_gamification.jpg"
+                  alt="figura-destaque"
+                  width="100%"
+              /></a>
+              <figcaption>
+                Jogo <br />
+                Ano
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Fim da imagem 2 -->
+          <!-- Início imagem 3 -->
+          <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="produtos.html"
+                ><img
+                  src="./img/ia_gamification.jpg"
+                  alt="figura-destaque"
+                  width="100%"
+              /></a>
+              <figcaption>
+                Jogo <br />
+                Ano
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Fim da imagem 3 -->
+          <!-- Início imagem 4 -->
+          <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="produtos.html"
+                ><img
+                  src="./img/ia_gamification.jpg"
+                  alt="figura-destaque"
+                  width="100%"
+              /></a>
+              <figcaption>
+                Jogo <br />
+                Ano
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Fim da imagem 4 -->
+          <!-- Início imagem 5 -->
+          <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="produtos.html"
+                ><img
+                  src="./img/ia_gamification.jpg"
+                  alt="figura-destaque"
+                  width="100%"
+              /></a>
+              <figcaption>
+                Jogo <br />
+                Ano
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Fim da imagem 5 -->
+          <!-- Início imagem 6 -->
+          <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="produtos.html"
+                ><img
+                  src="./img/ia_gamification.jpg"
+                  alt="figura-destaque"
+                  width="100%"
+              /></a>
+              <figcaption>
+                Jogo <br />
+                Ano
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Fim da imagem 6 -->
+          <!-- Início Saiba Mais -->
+          <div class="col-12">
+            <a href="#">Saiba Mais</a>
+          </div>
+          <!-- Fim Saiba Mais -->
         </div>
+      </div>
     </div>
     <!-- Fim Destaque -->
     <!-- Início do texto das novidades -->
     <div class="novidades" id="novidades-mobile">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <section class="text-body">
-                        <h2>Conheça nossas novidades</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo eius doloremque nulla, explicabo, omnis a obcaecati nostrum ut molestiae et quidem soluta fugiat, temporibus harum incidunt? Molestiae, nesciunt incidunt.</p>
-                        <a class="btn-banner" href="#" target="_blank">Saiba mais</a>
-                    </section>
-                </div>
-                <!-- Fim do texto novidades -->
-                <!-- Início da imagem novidades -->
-                <div class="col-md-6">
-                    <figure>
-                        <img src="./img/ia_gamification.jpg" class="img-fluid" alt="banner-home">
-                    </figure>
-                </div>
-                <!-- Fim da imagem Novidades -->
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <section class="text-body">
+              <h2>Conheça nossas novidades</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo
+                eius doloremque nulla, explicabo, omnis a obcaecati nostrum ut
+                molestiae et quidem soluta fugiat, temporibus harum incidunt?
+                Molestiae, nesciunt incidunt.
+              </p>
+              <a class="btn-banner" href="#" target="_blank">Saiba mais</a>
+            </section>
+          </div>
+          <!-- Fim do texto novidades -->
+          <!-- Início da imagem novidades -->
+          <div class="col-md-6">
+            <figure>
+              <img
+                src="./img/ia_gamification.jpg"
+                class="img-fluid"
+                alt="banner-home"
+              />
+            </figure>
+          </div>
+          <!-- Fim da imagem Novidades -->
         </div>
+      </div>
     </div>
     <!-- Início galeria -->
     <div class="galeria d-flex align-itens-center">
-        <div class="container">
-            <div class="row">
-                <!-- Início texto galerias -->
-                <div class="col-12">
-                    <section class="texto-galeria">
-                        <h2>Conheça nossa galeria</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero placeat quia enim laborum? Maxime sequi, nisi, similique modi maiores eligendi voluptatibus aliquid iste pariatur sint magni ab iusto possimus suscipit?</p>
-                    </section>
-                </div>
-                <!-- Fim texto galerias -->
-                <!-- Início imagem 1 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 1 da galeria -->
-                <!-- Início imagem 2 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 2 da galeria -->
-                <!-- Início imagem 3 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 3 da galeria -->
-                <!-- Início imagem 4 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 4 da galeria -->
-                <!-- Início imagem 5 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 5 da galeria -->
-                <!-- Início imagem 6 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 6 da galeria -->
-                <!-- Início imagem 7 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 7 da galeria -->
-                <!-- Início imagem 8 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 8 da galeria -->
-                <!-- Início imagem 9 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 9 da galeria -->
-                <!-- Início imagem 10 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 10 da galeria -->
-                <!-- Início imagem 11 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 11 da galeria -->
-                <!-- Início imagem 12 da galeria -->
-                <div class="gallery col-6 col-md-3">
-                    <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria">
-                </div>
-                <!-- Fim imagem 12 da galeria -->
-            </div>
+      <div class="container">
+        <div class="row">
+          <!-- Início texto galerias -->
+          <div class="col-12">
+            <section class="texto-galeria">
+              <h2>Conheça nossa galeria</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                placeat quia enim laborum? Maxime sequi, nisi, similique modi
+                maiores eligendi voluptatibus aliquid iste pariatur sint magni
+                ab iusto possimus suscipit?
+              </p>
+            </section>
+          </div>
+          <!-- Fim texto galerias -->
+          <!-- Início imagem 1 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 1 da galeria -->
+          <!-- Início imagem 2 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 2 da galeria -->
+          <!-- Início imagem 3 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 3 da galeria -->
+          <!-- Início imagem 4 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 4 da galeria -->
+          <!-- Início imagem 5 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 5 da galeria -->
+          <!-- Início imagem 6 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 6 da galeria -->
+          <!-- Início imagem 7 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 7 da galeria -->
+          <!-- Início imagem 8 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 8 da galeria -->
+          <!-- Início imagem 9 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 9 da galeria -->
+          <!-- Início imagem 10 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 10 da galeria -->
+          <!-- Início imagem 11 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 11 da galeria -->
+          <!-- Início imagem 12 da galeria -->
+          <div class="gallery col-6 col-md-3">
+            <img src="./img/gameedu.jpg" class="img-fluid" alt="img-galeria" />
+          </div>
+          <!-- Fim imagem 12 da galeria -->
         </div>
+      </div>
     </div>
     <!-- Fim da Galeria -->
     <!-- Início footer -->
     <footer class="rodape">
-        <div class="container">
-            <div class="row m-0">
-                <!-- Início Logo -->
-                <div id="logo-rodape" class="col-md-4">
-                    <figure>
-                        <img src="./img/logo.png" alt="logo_rodape">
-                    </figure>
-                </div>
-                <!-- Fim Logo -->
-                <!-- Início Texto -->
-                <div class="col-md-4">
-                    <div class="info-contato">
-                        <p>Email:</p>
-                        <p>example@corp.net</p><br>
-                        <p>Endereço:</p>
-                        <p>Avenida ABC, 123</p><br>
-                        <p>Telefone:</p>
-                        <p>+55 (15) 5555-1234</p>
-                    </div>
-                </div>
-                <!-- Fim Texto -->
-                <!-- Início das Mídias Sociais -->
-                <!-- Alt + Shift + Seta para baixo > Duplica Linha -->
-                <!-- Ctrl + Space > Mostra o caminho do objeto dentro de SRC -->
-                <div class="col-md-4">
-                    <figure class="redes-sociais">
-                        <a href="#"><img src="img/face.png" alt="Facebook"></a>
-                        <a href="#"><img src="img/insta.png" alt="Instragam"></a>
-                        <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
-                        <a href="#"><img src="img/linkedin.png" alt="Linkedin"></a>
-                    </figure>
-                    <br>
-                    <a href="index.html">Home</a>
-                    <a href="produtos.html">Produtos</a>
-                    <a href="streaming.html">#Streaming</a>
-                    <a href="contato.html">Contato</a>
-                </div>
-                <!-- Fim Mídias Sociais -->
-                <!-- Início Direitos Autorais -->
-                <div class="col-12">
-                    <p class="direitos">Direitos Autorais</p>
-                </div>
-                <!-- Fim Direitos Autorais -->
+      <div class="container">
+        <div class="row m-0">
+          <!-- Início Logo -->
+          <div id="logo-rodape" class="col-md-4">
+            <figure>
+              <img src="./img/logo.png" alt="logo_rodape" />
+            </figure>
+          </div>
+          <!-- Fim Logo -->
+          <!-- Início Texto -->
+          <div class="col-md-4">
+            <div class="info-contato">
+              <p>Email:</p>
+              <p>example@corp.net</p>
+              <br />
+              <p>Endereço:</p>
+              <p>Avenida ABC, 123</p>
+              <br />
+              <p>Telefone:</p>
+              <p>+55 (15) 5555-1234</p>
             </div>
+          </div>
+          <!-- Fim Texto -->
+          <!-- Início das Mídias Sociais -->
+          <!-- Alt + Shift + Seta para baixo > Duplica Linha -->
+          <!-- Ctrl + Space > Mostra o caminho do objeto dentro de SRC -->
+          <div class="col-md-4">
+            <figure class="redes-sociais">
+              <a href="#"><img src="img/face.png" alt="Facebook" /></a>
+              <a href="#"><img src="img/insta.png" alt="Instragam" /></a>
+              <a href="#"><img src="img/youtube.png" alt="YouTube" /></a>
+              <a href="#"><img src="img/linkedin.png" alt="Linkedin" /></a>
+            </figure>
+            <br />
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="streaming.html">#Streaming</a>
+            <a href="contato.html">Contato</a>
+          </div>
+          <!-- Fim Mídias Sociais -->
+          <!-- Início Direitos Autorais -->
+          <div class="col-12">
+            <p class="direitos">Direitos Autorais</p>
+          </div>
+          <!-- Fim Direitos Autorais -->
         </div>
+      </div>
     </footer>
     <!-- Fim Rodape -->
+  </body>
 
-</body>
+  <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/script_menu.js"></script>
+  <script>
+    
+  let mouseOnScrollspy
+  const scrollspy = document.querySelector('#scrollspy .menu-sidebar')
+  const footer = document.querySelector('#mdb-footer')
+  const navbar = document.querySelector('#mdb-navbar')
+  const navbarHeight = parseInt(getComputedStyle(navbar).height)
+  const offsetTop = parseInt(getComputedStyle(scrollspy).offsetTop)
+  let windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  new mdb.PerfectScrollbar(scrollspy)
 
-<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+  const handleScrollbarMaxHeight = () => {
+    windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    if (window.scrollY <= 100) {
+      scrollspy.style.maxHeight = `${parseInt(windowHeight) - scrollspy.getBoundingClientRect().top + 86}px`
+    } else {
+      scrollspy.style.maxHeight = `${parseInt(windowHeight) - scrollspy.getBoundingClientRect().top - 16}px`
+    }
+  }
 
-<script type="text/javascript" src="./js/script_menu.js"></script>
+  const scrollIntoActiveElement = (target) => {
+    if(scrollspy.scrollTop > target.offsetTop) {
+      scrollspy.scrollTo(0, target.offsetTop)
+    } else if(scrollspy.scrollTop + scrollspy.clientHeight < target.offsetTop + target.clientHeight) {
+      scrollspy.scrollTo(0, target.offsetTop + target.clientHeight - scrollspy.clientHeight)
+    }
+  }
+
+  scrollspy.addEventListener('mouseover', () => {
+    mouseOnScrollspy = true
+  })
+  scrollspy.addEventListener('mouseout', () => {
+    mouseOnScrollspy = false
+  })
+
+  window.addEventListener('activate.mdb.scrollspy', (e)=>{
+  if(mouseOnScrollspy) {
+    return
+  }
+    const activeElements = Array.from(scrollspy.querySelectorAll('#scrollspy .menu-sidebar .active'))
+    scrollIntoActiveElement(activeElements.slice(-1)[0])
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    handleScrollbarMaxHeight()
+    document.querySelector('#scrollspy .ps__rail-y').style.opacity = '1'
+    scrollspy.scroll({
+      top: 1
+    })
+  })
+
+  window.addEventListener('resize', handleScrollbarMaxHeight)
+  </script>
 
 </html>
